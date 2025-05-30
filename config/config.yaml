@@ -1,0 +1,15 @@
+server:
+  port: 8080
+log:
+  file_path: logs/mcp-mesh.log
+  max_size: 100
+  max_backups: 7
+  max_age: 7
+  compress: true
+  level: info
+mcp_config:
+  service1:
+    base_url: http://localhost:8081
+    extra_header:
+      X-Custom-Header: Value1
+    config_path: ./mcp-config/service1.yaml
